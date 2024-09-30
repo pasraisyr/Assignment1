@@ -47,7 +47,7 @@ public class User {
         } else {
             for (String book : borrowedBooks) {
                 LocalDate dueDate = borrowedBooksDueDates.get(book);
-                System.out.println(name +"Book: " + book + ", Due Date: " + dueDate);
+                System.out.println(name + " " + "Book: " + book + ", Due Date: " + dueDate  );
             }
         }
     }
@@ -60,7 +60,7 @@ public class User {
             String overdueMessage = today.isAfter(dueDate) 
                 ? "Overdue by " + (today.toEpochDay() - dueDate.toEpochDay()) + " days"
                 : "Not overdue";
-            System.out.println("Book: " + book + ", Status: " + overdueMessage);
+            System.out.println(name + " " + "Book: " + book + " "+", Due Date:" + " " + dueDate +", Status: " + overdueMessage);
         }
     }
 }
