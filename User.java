@@ -7,7 +7,7 @@ public class User {
     private String name;
     private int age;
     private ArrayList<String> borrowedBooks;
-   private Map<String, LocalDate> borrowedBooksDueDates;
+    private Map<String, LocalDate> borrowedBooksDueDates;
 
     public User(String name,int age){
         this.name = name;
