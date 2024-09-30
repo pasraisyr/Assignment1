@@ -37,6 +37,10 @@ public class Library {
         users.add(user);
     }
 
+    public ArrayList<User> getUsers() {
+        return users;
+    }
+
     public void listAvailableBooks() {
         System.out.println("--- Available Books ---");
         for (Book book : books) {
